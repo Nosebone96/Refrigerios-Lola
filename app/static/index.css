@@ -1,0 +1,254 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+} 
+
+body{
+    font-family: 'Franklin Gothic Book'; 
+    background-color: rgb(228, 233, 183);
+}
+
+.encabezado
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5) ), 
+    url(im/alimentos.jpg.jpg);
+    min-height: 55vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.encabezado .menu{
+    position:absolute;
+    top:0;
+    left: 0;
+    right:0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.encabezado .menu{
+    display:flex;
+    justify-content: space-around;
+}
+
+.encabezado .logo{
+    width: 95px;
+    border-radius: 60% ;
+    position: relative;
+    font-size: 25px;
+}
+
+.encabezado .menu .menu-horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado a{
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+}
+
+.encabezado li:hover{
+    background: rgb(0, 41, 80);
+}
+
+.encabezado .menu-vertical{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: rgb(107, 107, 104);
+}
+
+.encabezado .menu-horizontal li:hover .menu-vertical{
+    display:block;
+}
+
+.header-txt{
+    width:40% ;
+    margin-top: 130px;
+    margin-left: 220px ;
+    font-family: Franklin Gothic Book;
+}
+.header-txt h1{
+    font-size: 40px;
+    line-height: 46px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+}
+.header-txt p{
+    font-size: 20px;
+    color: rgb(243, 247, 59);
+    margin-bottom: 15px;
+}
+
+.contenido1{
+    text-align: left;
+    margin: 25px 25px ;
+   
+}
+.contenido1 h1
+{
+    font-size: 40px;
+    font-family: Malgun Gothic;
+    color: rgba(12, 88, 5, 0.897);
+   text-transform: uppercase;
+   padding: 12px 30px;
+   width:50% ;
+}
+
+.contenido1 h2 
+{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    text-align: inherit;
+   text-transform: uppercase;
+   margin: 25px 100px;
+   
+}
+.contenido1 h3
+{
+    font-size: 39px;
+    font-family:Footlight MT ;
+    color: rgb(0, 56, 3);
+    text-align: center;
+}
+
+
+.contenido1 p{
+    font-size: 18px;
+    color: black;
+}
+
+.contenido2{
+    text-align: center;
+    margin: 23px;
+}
+
+.contenido2 h2{
+    color: black;
+    font-size: 30px;
+   text-transform: uppercase;
+}
+
+.contenido2 p{
+    font-size: 34;
+    margin: 20px 350px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #610909;
+    color: bisque;
+}
+.contenido3{
+    text-align: center;
+    margin: 23px;
+}
+
+.contenido3 h2{
+    color: black;
+    font-size: 30px;
+   text-transform: uppercase;
+}
+
+.contenido3 p{
+    font-size: 34;
+    margin: 20px 350px;
+}
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #610909;
+    color: bisque;
+}
+
+
+.pie_de_pagina {
+   background-color: rgb(39, 82, 45);
+    
+}
+
+.pie_de_pagina .img{
+    text-align: center;
+}
+
+.pie_de_pagina img{
+  
+    margin-bottom: 10px;
+}
+
+.pie_de_pagina .link a{
+    display: block;
+  margin: 20px;
+}
+
+.pie_de_pagina .logoa{
+    width: 65px;
+    border-radius: 50% ;
+    position: relative;
+
+}
+.pie_de_pagina .lola{
+    width: 65px;
+    border-radius: 50% ;
+    position: relative;
+    
+}
+ 
+.pie_de_pagina .gobierno{
+    width: 200px;
+    position: relative;
+    
+}
+
+.pie_de_pagina .img{
+    margin-top: 50px;
+}
+ 
+.pie_de_pagina .footer-link{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    line-height:5px ;
+   margin-left: 46px;
+   text-align:center ;
+}
+ 
+.link{
+    margin-left: 35px;
+    margin-top: 20px;
+    text-align:center ;
+}
+.footer-link h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(245, 255, 110);
+    text-align:center ;
+}
+
+.footer-link li a {
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Century Schoolbook;
+    color: rgb(253, 253, 253);
+}
+
+.pie_de_pagina a:hover{
+    background: rgb(146, 0, 0);
+    padding: 10px ;
+}
