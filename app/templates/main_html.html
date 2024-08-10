@@ -1,52 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RL</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
-</head>
-<body>
-  <body>
-  <header class="encabezado">
-    <nav class="menu">
-        <div>
-            <img src="im/RL.png" alt="logo" class="logo">
-        </div>
+{% extends 'layout.html' %}
 
-        <div class="barra">
-            <ul class="menu-horizontal">
-                <li><a href="#">Inicio</a></li>
-                <li>
-                    <a href="main_html.html">inscripción</a>
-                    <ul class="menu-vertical">
-                        <li><a href="https://forms.gle/qYtmYsHZeRb7onz68">Formulario</a></li>
-                    </ul>
-                </li>
-                <li><a href="Inicia_sesión.html">Inicia sesión</a></li>
-                <li><a href= "quejas.html">Quejas</a></li>
-            </ul>
-        </div>
-    </nav>
-<br>
-<br>
-    <div class="header-contenido container">
-        <div class="header-txt">
-            <h1>REFRIGERIOS LOLA</h1>
-            <p>(RL)</p>
-        </div>
-    </div>
+{% block title %}Refirgerios Lola{% endblock %}
+{% block title_h1 %}Refirgerios Lola{% endblock %}
 
-  </header>
+{% block body %}
+
    <section class="contenido1">
-    <h1 >¡Bienvenidos a Refrigerios Lola! Aquí podras ver qué alimentos entregan en la institución Lola Gonzalez. Esto es con el fin de
-        que sepas cuál de los dos refirgerios escoger, si complemento o vaso de leche  </h1>
+    <h1 >
+        ¡Bienvenidos a Refrigerios Lola! Aquí podras ver qué alimentos entregan en la institución Lola Gonzalez. Esto es con el fin de
+        que sepas cuál de los dos refirgerios escoger, si complemento o vaso de leche  
+    </h1>
     <br>
       
     <br>
-    <h2>   a continuación les vamos a mostrar los dos tipos de alimentos que entregan para que te decidas 
-        por el que maaaas te im-pac-tó. (recuerda que solo se escoge uno :(...)
-       </h1>
+    <h2>   
+        A continuación les vamos a mostrar los dos tipos de alimentos que entregan para que te decidas por el que maaaas te im-pac-tó. (recuerda que solo se escoge uno)
+    </h2>
     <br>
         </section>
         <section class="contenido2">
@@ -60,7 +29,6 @@
             y comidas como panes que ayudan a un balance 
             en el alimento de los estudiantes blablablablablablabla
             bla bla blaaaaaaaaaaaaaaaaaaaaa...
-
         </p>
         <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -68,7 +36,7 @@
         veritatis fugit sed libero eos, vel recusandae
         molestiae corrupti? Iste delectus repellat quod nulla?
         </p>
-        <a href="Vaso_de_leche.html" class="btn-1">¿Qué es?</a>
+        <a href="{{url_for('main.vaso_de_leche')}}" class="btn-1">¿Qué es?</a>
         </section>
         <br>
         <br>
@@ -88,42 +56,7 @@
                 illum facere, suscipit minus quae repellendus autem odit 
                 magni recusandae earum, laudantium vel aliquam aliquid.
                 </p>
-                <a href="Complemento.html" class="btn-2">¿Qué es?</a>
-        </section>
-        <footer class="pie_de_pagina">
-            <div class="container">
-                <div class="footer-link">
-                    <div class="img">
-                        <img src="im/RL.png" alt="logo" class="logoa">
-                        <img src="im/lola.jpg" alt="lola" class="lola">
-                    </div>
-                    <div class="link">
-                        <h4>Compañía</h4> 
-                        <ul>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                        </ul>
-                    </div>
-                    <div class="link">
-                        <h4>Compañía</h4> 
-                        <ul>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                        </ul>
-                    </div>
-                    <div class="link">
-                        <h4>Queja</h4>
-                        <ul>
-                            <li><a href="#">Inquietudes</a></li>
-                        </ul>
-                    </div>
-                </div>
-            
-            </div>   
-        </footer>
- </body>
-</html>
+            <a href="{{url_for('main.complemento')}}" class="btn-2">¿Qué es?</a>
+    </section>
+{%endblock%}
+        

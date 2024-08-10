@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    </head>
+    <body>
+        <header class="encabezado">
+            <nav class="menu">
+                <div>
+                    <img src="im/RL.png" alt="logo" class="logo">
+                </div>
+
+                <div class="barra">
+                    <ul class="menu-horizontal">
+                        <li><a href="{{url_for('main.index')}}">Inicio</a></li>
+                        <li>
+                            <a>inscripción</a>
+                            <ul class="menu-vertical">
+                                <li><a href="https://forms.gle/qYtmYsHZeRb7onz68">Formulario</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{url_for('main.inicia_sesion')}}">Inicia sesión</a></li>
+                        <li><a href= "{{ url_for('main.quejas') }}">Quejas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <br>
+        <br>
+            <div class="header-contenido container">
+                <div class="header-txt">
+                    <h1>{% block title_h1 %}{% endblock %}</h1>
+                    <p>(RL)</p>
+                </div>
+            </div>
+
+        </header>
+
+        {% block body %} {% endblock %}
+    
+        <footer class="pie_de_pagina">
+            <div class="container">
+                <div class="footer-link">
+                    <div class="img">
+                        <img src="im/RL.png" alt="logo" class="logoa">
+                        <img src="im/lola.jpg" alt="lola" class="lola">
+                    </div>
+                    <div class="link">
+                        <h4>Compañía</h4> 
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <h4>Compañía</h4> 
+                        <ul>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <h4>Queja</h4>
+                        <ul>
+                            <li><a href="#">Inquietudes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>   
+        </footer>
+    </body>
+</html>

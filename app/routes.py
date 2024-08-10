@@ -11,3 +11,11 @@ def complemento():
 @bp.route('/vaso_de_leche')
 def vaso_de_leche():
     return render_template('vaso_de_leche.html')
+
+@bp.route('/inicia_sesion')
+def inicia_sesion():
+    return render_template('inicia_sesion.html')
+
+@bp.route('/quejas')
+def quejas():
+    return render_template('Quejas.html')
